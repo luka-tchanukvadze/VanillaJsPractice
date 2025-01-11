@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Dark Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cookieNotice" class="cookie-notice">
+        <p>This website uses cookies to ensure you get the best experience.</p>
+        <button id="acceptCookies">Accept</button>
+    </div>
+
+    <header class="header">
+        <div class="logo">CoolDark</div>
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#slider">Users</a></li>
+                <li><a href="#form">Register</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="slider" class="slider-section">
+            <h2>Featured Users</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper"></div>
+                <button class="slider-btn prev">←</button>
+                <button class="slider-btn next">→</button>
+            </div>
+        </section>
+
+        <section id="form" class="form-section">
+            <h2>Join Us</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group password-group">
+                    <input type="password" id="password" placeholder="Password">
+                    <button type="button" class="toggle-password">👁️</button>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="faq" class="accordion-section">
+            <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">What is this website about?</div>
+                    <div class="accordion-content">
+                        <p>This is a demo website showcasing various JavaScript functionalities with a cool dark theme.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">How do I register?</div>
+                    <div class="accordion-content">
+                        <p>Fill out the registration form above with your details. Make sure to use a valid email and a strong password.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <h2>Find Users</h2>
+            <input type="text" id="filterInput" placeholder="Search users...">
+            <div id="usersList" class="users-list"></div>
+        </section>
+    </main>
+
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
