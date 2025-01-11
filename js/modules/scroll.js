@@ -12,9 +12,9 @@ export function initScrollToTop() {
 
     // Change header background on scroll
     if (window.scrollY > 50) {
-      header.style.background = "var(--bg-secondary)";
+      header.style.background = "rgba(26, 26, 46, 0.9)";
     } else {
-      header.style.background = "var(--bg-primary)";
+      header.style.background = "rgba(26, 26, 46, 0.8)";
     }
   });
 

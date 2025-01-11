@@ -19,4 +19,15 @@ export function initBurgerMenu() {
       }
     });
   });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerIcon.contains(e.target) && !navMenu.contains(e.target)) {
+      burgerIcon.classList.remove("active");
+      navMenu.classList.remove("active");
+      burgerIcon.querySelectorAll("span").forEach((span) => {
+        span.style.transform = "none";
+      });
+    }
+  });
 }

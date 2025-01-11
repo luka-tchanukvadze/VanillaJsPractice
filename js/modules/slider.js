@@ -24,6 +24,8 @@ export function initSlider() {
       updateSlider();
     } catch (error) {
       console.error("Error fetching users:", error);
+      sliderWrapper.innerHTML =
+        "<p>Failed to load users. Please try again later.</p>";
     }
   }
 

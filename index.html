@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Dark Dashboard</title>
+    <title>Neon Pulse Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="cookieNotice" class="cookie-notice">
-        <p>This website uses cookies to ensure you get the best experience.</p>
+        <p>This website uses cookies for an electrifying experience.</p>
         <button id="acceptCookies">Accept</button>
     </div>
 
     <header class="header">
-        <div class="logo">CoolDark</div>
+        <div class="logo">NeonPulse</div>
         <div class="burger-menu">
             <div class="burger-icon">
                 <span></span>
@@ -25,15 +26,20 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#slider">Users</a></li>
-                <li><a href="#form">Register</a></li>
+                <li><a href="#form">Join</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="home" class="hero-section">
+            <h1>Welcome to NeonPulse</h1>
+            <p>Dive into the electrifying world of digital innovation</p>
+        </section>
+
         <section id="slider" class="slider-section">
-            <h2>Featured Users</h2>
+            <h2>Pulse of Our Community</h2>
             <div class="slider-container">
                 <div class="slider-wrapper"></div>
                 <button class="slider-btn prev">←</button>
@@ -42,7 +48,7 @@
         </section>
 
         <section id="form" class="form-section">
-            <h2>Join Us</h2>
+            <h2>Join the Grid</h2>
             <form id="registrationForm">
                 <div class="form-group">
                     <input type="text" id="username" placeholder="Username">
@@ -57,34 +63,44 @@
                     <button type="button" class="toggle-password">👁️</button>
                     <span class="error-message"></span>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit">Power Up</button>
             </form>
         </section>
 
         <section id="faq" class="accordion-section">
-            <h2>FAQ</h2>
+            <h2>Frequently Asked Questions</h2>
             <div class="accordion">
                 <div class="accordion-item">
-                    <div class="accordion-header">What is this website about?</div>
+                    <div class="accordion-header">What is NeonPulse?</div>
                     <div class="accordion-content">
-                        <p>This is a demo website showcasing various JavaScript functionalities with a cool dark theme.</p>
+                        <p>NeonPulse is a cutting-edge platform showcasing the latest in web technologies with a vibrant, neon-inspired design.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-header">How do I register?</div>
+                    <div class="accordion-header">How do I join?</div>
                     <div class="accordion-content">
-                        <p>Fill out the registration form above with your details. Make sure to use a valid email and a strong password.</p>
+                        <p>Simply fill out the registration form in the "Join the Grid" section. Make sure to use a valid email and a strong password to secure your account.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Is my data safe?</div>
+                    <div class="accordion-content">
+                        <p>We use state-of-the-art encryption and security measures to protect all user data. Your privacy is our top priority.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="filter-section">
-            <h2>Find Users</h2>
-            <input type="text" id="filterInput" placeholder="Search users...">
+            <h2>Locate Users</h2>
+            <input type="text" id="filterInput" placeholder="Search the grid...">
             <div id="usersList" class="users-list"></div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2023 NeonPulse. All rights reserved.</p>
+    </footer>
 
     <button id="scrollToTop" class="scroll-to-top">↑</button>
 

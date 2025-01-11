@@ -12,6 +12,8 @@ export function initFilter() {
       displayUsers(users);
     } catch (error) {
       console.error("Error fetching users:", error);
+      usersList.innerHTML =
+        "<p>Failed to load users. Please try again later.</p>";
     }
   }
 
@@ -22,6 +24,7 @@ export function initFilter() {
           <div class="user-item">
               <h3>${user.name}</h3>
               <p>${user.email}</p>
+              <p>${user.company.name}</p>
           </div>
       `
       )
@@ -33,7 +36,8 @@ export function initFilter() {
     const filteredUsers = users.filter(
       (user) =>
         user.name.toLowerCase().includes(searchTerm) ||
-        user.email.toLowerCase().includes(searchTerm)
+        user.email.toLowerCase().includes(searchTerm) ||
+        user.company.name.toLowerCase().includes(searchTerm)
     );
     displayUsers(filteredUsers);
   });
